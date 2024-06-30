@@ -4,10 +4,7 @@ import ProductDetails from "../components/ProductDetails"
 import { Product } from "../types"
 
 export async function loader() {
-    console.log('Desde loader') 
-
     const products = await getProducts()
-
     return products
 }
 
